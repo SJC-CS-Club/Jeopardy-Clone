@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jepardy</title>
+    <link rel="stylesheet" href="./styles/jep.css" />
+    <script src="./src/script.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Board Game -->
+    <div class="board">
+      <h1 class="category">HTML</h1>
+      <h1 class="category">JavaScript</h1>
+      <h1 class="category">C++</h1>
+      <h1 class="category">General Programming</h1>
+      <h1 class="category">Python</h1>
+      <h1 class="category">CSS</h1>
+
+      <!-- Question Rows / First Row -->
+      <div
+        class="question"
+        data-question="What does HTML stand for?"
+        data-answer="HyperText Markup Language"
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="How do you define a function in JavaScript?"
+        data-answer="Using the function() keyword. [e.g. function addTwoNumbers(a, b)]"
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="What is a constructor in C++?"
+        data-answer=" A constructor is a special member function that initializes objects of a class."
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="What is the difference between compiled and interpreted languages?"
+        data-answer="Compiled languages are converted into machine code before execution, while interpreted languages are executed line by line at runtime."
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="What keyword is used to define a function in Python?"
+        data-answer="The 'def' keyword"
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="What does CSS stand for?"
+        data-answer="Cascading Style Sheets"
+      >
+        $100
+      </div>
+
+      <!-- Second Row -->
+      <div
+        class="question"
+        data-question="Which tag is used to create a hyperlink in HTML?"
+        data-answer="The 'a' tag (anchor tag)"
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="What is the difference between null and undefined in JavaScript?"
+        data-answer="undefined means a variable has been declared but not assigned a value, whereas null is an assignment value that represents 'no value' or 'empty.'"
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="What is a Pointer in C++?"
+        data-answer="A pointer is a variable that holds the memory address of another variable."
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="What is a linked list?"
+        data-answer=" A linked list is a linear data structure where each element (node) points to the next one, forming a chain."
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="What is the purpose of the self parameter in Python class methods?"
+        data-answer=""
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="What is the box model in CSS?"
+        data-answer="The Box Model is the structure of an element that includes content, padding, border, and margin"
+      >
+        $200
+      </div>
+
+      <!-- Third row -->
+      <div
+        class="question"
+        data-question="what are semantic element in HTML"
+        data-answer="Semantic elements are HTML elements that are used to structure content based on their meaning, rather than their appearance. They help to make web pages more accessible, well-structured, and easier to navigate."
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="What is the difference between == and === in JavaScript?"
+        data-answer="'==' compares values after type conversion, while '===' compares both value and type."
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="What is the difference between public, private, and protected access specifiers in C++?"
+        data-answer="public allows access from anywhere, private restricts access to the class itself, and protected allows access in derived classes."
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="What is the time complexity of the binary search algorithm?"
+        data-answer="Olog(n)"
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="What is a list comprehension in Python?"
+        data-answer="List comprehension is concise way to create lists using a single line of code, e.g., [x for x in range(10)]."
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="What is the difference between absolute and relative positioning in CSS?"
+        data-answer="absolute positions an element relative to its nearest positioned ancestor, while relative positions an element relative to its normal position in the document flow."
+      >
+        $300
+      </div>
+
+      <!-- Fourth Row -->
+      <div
+        class="question"
+        data-question="What is the purpose of the <meta> tag in an HTML document?"
+        data-answer="It provides metadata about the HTML document such as character set, viewport settings, or description"
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="What is the difference between let, var, and const?"
+        data-answer="'var' is function-scoped and can be redeclared, 'let' is block-scoped and cannot be redeclared, and 'const' is block-scoped and cannot be reassigned."
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="Explain the difference between stack and heap memory in C++."
+        data-answer="Stack memory is automatically managed and stores local variables, while heap memory is manually allocated and deallocated by the programmer using 'new' and 'delete' keywords."
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="What is a segmentation fault?"
+        data-answer=" A segmentation fault occurs when a program tries to access memory that it is not allowed to, often due to dereferencing invalid or null pointers."
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="What is the difference between append() and extend() in Python lists?"
+        data-answer="append() adds a single element to the end of the list, while extend() adds elements from another iterable."
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="What is a media query in CSS?"
+        data-answer="A Media queyry allows the application of styles depending on the conditions like screen size, resolution, or device orientation."
+      >
+        $400
+      </div>
+
+      <!-- Fifth Row -->
+      <div
+        class="question"
+        data-question="What are data attributes in HTML, and how are they used?"
+        data-answer="Data attributes allow you to store custom data on elements using the data-* attribute. They can be accessed via JavaScript using element.dataset"
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="Explain what happens when a JavaScript promise is rejected"
+        data-answer="When a promise is rejected, the catch() method is called to handle the rejection, or the error can propagate if not caught."
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="What is the use of the virtual keyword in C++?"
+        data-answer="virtual is used to define methods in base classes that can be overridden in derived classes to enable runtime polymorphism."
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="What is multithreading?"
+        data-answer="Multithreading is a technique that allows multiple threads to be executed concurrently within a program, improving performance by making efficient use of CPU resources, especially for tasks that can be run in parallel."
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="What is a generator in Python?"
+        data-answer="A generator is a function that yields values one at a time and allows for efficient iteration over large datasets."
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="What is the difference between the responsive 'em' and 'rem' units in CSS?"
+        data-answer="The 'em' unit is relative to the font-size of the parent element, while 'rem' is relative to the root element (usually the html tag)."
+      >
+        $500
+      </div>
+    </div>
+
+    <div class="teams">
+      <div class="team">
+        <h2 contenteditable="true">Team 1</h2>
+        <hr />
+        <div class="counter" id="counter_one">0</div>
+        <div class="team-buttons">
+          <button class="minus" data-team="counter_one">
+            <i class="bx bx-minus"></i>
+          </button>
+          <button class="plus" data-team="counter_one">
+            <i class="bx bx-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="team">
+        <h2 contenteditable="true">Team 2</h2>
+        <hr />
+        <div class="counter" id="counter_two">0</div>
+        <div class="team-buttons">
+          <button class="minus" data-team="counter_two">
+            <i class="bx bx-minus"></i>
+          </button>
+          <button class="plus" data-team="counter_two">
+            <i class="bx bx-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="team">
+        <h2 contenteditable="true">Team 3</h2>
+        <hr />
+        <div class="counter" id="counter_three">0</div>
+        <div class="team-buttons">
+          <button class="minus" data-team="counter_three">
+            <i class="bx bx-minus"></i>
+          </button>
+          <button class="plus" data-team="counter_three">
+            <i class="bx bx-plus"></i>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
