@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  $bg-color: #2a3698;
+  
+  body {
+    background-color: $bg-color;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 80px);
+    margin: 20px auto;
+    width: 90vw;
+  }
+  
+  .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  
+  .question {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    border: 2px solid black;
+    font-size: 28px;
+  }
+  
+  .question:hover {
+    border: 2px solid yellow;
+    transition: all 0.4s ease;
+  }
+  
+  .question.clicked {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: none;
+    background-color: $bg-color;
+    z-index: 100;
+    font-size: 3rem;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  .teams {
+    width: 90vw;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 10px;
+  }
+  
+  .team h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .team .counter {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+    background-color: $bg-color;
+  }
+  
+  .team .team-buttons {
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .team-buttons i {
+    font-size: 28px;
+  }
+  
+  .plus {
+    color: green;
+  }
+  
+  .minus {
+    color: red;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .board {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .board {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .board {
+      grid-template-columns: 1fr;
+    }
+    .category,
+    .question {
+      font-size: 14px;
+      padding: 15px;
+    }
+  } /*# sourceMappingURL=jep.css.map */
+  
