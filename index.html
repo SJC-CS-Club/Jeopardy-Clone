@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jepardy</title>
+    <link rel="stylesheet" href="./styles/jep.css" />
+    <script src="./src/script.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Board Game -->
+    <div class="board">
+      <h1 class="category">HTML</h1>
+      <h1 class="category">JavaScript</h1>
+      <h1 class="category">C++</h1>
+      <h1 class="category">General Programming</h1>
+      <h1 class="category">Python</h1>
+      <h1 class="category">Computer Science</h1>
+
+      <!-- Question Rows / First Row -->
+      <div
+        class="question"
+        data-question="This tag defines the largest heading on a web page at 64px"
+        data-answer="What is <h1>"
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="This keyword is used to declare a variable that can be reassigned."
+        data-answer="What is let"
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="This statement is used to output text to the console."
+        data-answer="What is cout"
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="This is the term for a block of reusable code designed to perform a specific task."
+        data-answer="What is a function"
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="This keyword is used in Python to define a function."
+        data-answer="what is def"
+      >
+        $100
+      </div>
+      <div
+        class="question"
+        data-question="This is the basic unit of information in computing, represented as a 0 or 1."
+        data-answer="What is a bit"
+      >
+        $100
+      </div>
+
+      <!-- Second Row -->
+      <div
+        class="question"
+        data-question="This attribute in the <img> tag specifes the image file to display"
+        data-answer="What is 'src' attribute"
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="This function is used to print text to the browser console for debugging."
+        data-answer="What is console.log"
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="This function is called automatically when an object is created."
+        data-answer="What is a constructor"
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="This term describes an error that occurs when the code runs, not when it's compiled."
+        data-answer="What is a runtime error"
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="This built-in data type stores key-value pairs and is surrounded by curly braces."
+        data-answer="What is a dictionary."
+      >
+        $200
+      </div>
+      <div
+        class="question"
+        data-question="This algorithmic structure repeats a block of code until a condition is false."
+        data-answer="What is a loop"
+      >
+        $200
+      </div>
+
+      <!-- Third row -->
+      <div
+        class="question"
+        data-question="This tag is used to create a clickable hyperlink to another page."
+        data-answer="What is <a>"
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="This global object represents the entire HTML document loaded in the browser."
+        data-answer="What is the document object."
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="this operator is used to access members of a class through a pointer."
+        data-answer="What is -> (member access operator)"
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="A variable declared inside a function is said to have this type of scope."
+        data-answer="What is local scope / block scope"
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="This keyword is used inside a function to send a value back to where it was called."
+        data-answer="What is return"
+      >
+        $300
+      </div>
+      <div
+        class="question"
+        data-question="This type of data structure works on a “last in, first out” principle."
+        data-answer="What is a Stack"
+      >
+        $300
+      </div>
+
+      <!-- Fourth Row -->
+      <div
+        class="question"
+        data-question="This element contains metadata such as the page title and linked stylesheets."
+        data-answer="What is <head>"
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="This method allows you to attach an event handler to an element without overwriting existing ones."
+        data-answer="What is addEventListener()"
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="This keyword is used to create a new instance of a class dynamically on the heap."
+        data-answer="What is new"
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="These three words make up the acronym “IDE,” a tool developers use to write, test, and debug their code."
+        data-answer="What is Integrated Developement Enviornment"
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="This function returns the number of items in a list, tuple, or other collection."
+        data-answer="What is len()"
+      >
+        $400
+      </div>
+      <div
+        class="question"
+        data-question="This programming paradigm organizes code into objects that combine data and the functions that act on that data."
+        data-answer="What is Object-oriented programming"
+      >
+        $400
+      </div>
+
+      <!-- Fifth Row -->
+      <div
+        class="question"
+        data-question="What element is used as a pure Division Container for grouping content dynamically?"
+        data-answer="What is <div>"
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="This is the type of programming language JavaScript is"
+        data-answer="A Scripting language, it's in the name"
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="When two or more functions have the same name but different parameters, this feature is being used."
+        data-answer="What is function overloading"
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="A binary tree in which each parent has at most two children is an example of this data structure type."
+        data-answer="What is a hierarchical structure?"
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="This Python concept allows you to write a function inside another function and return it, often used in decorators."
+        data-answer="What is a higher-order function / nested function"
+      >
+        $500
+      </div>
+      <div
+        class="question"
+        data-question="This is the term for the measure of how efficiently an algorithm runs in relation to input size."
+        data-answer="What is time complexity (Big-O notation)"
+      >
+        $500
+      </div>
+    </div>
+
+    <div class="teams">
+      <div class="team">
+        <h2 contenteditable="true">Team 1</h2>
+        <hr />
+        <div class="counter" id="counter_one">0</div>
+        <div class="team-buttons">
+          <button class="minus" data-team="counter_one" type="button" title="Decrease score for Team 1">
+            <i class="bx bx-minus"></i>
+          </button>
+          <button class="plus" data-team="counter_one" type="button" title="Increase score for Team 1">
+            <i class="bx bx-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="team">
+        <h2 contenteditable="true">Team 2</h2>
+        <hr />
+        <div class="counter" id="counter_two">0</div>
+        <div class="team-buttons">
+          <button class="minus" data-team="counter_two">
+            <i class="bx bx-minus"></i>
+          </button>
+          <button class="plus" data-team="counter_two">
+            <i class="bx bx-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="team">
+        <h2 contenteditable="true">Team 3</h2>
+        <hr />
+        <div class="counter" id="counter_three">0</div>
+        <div class="team-buttons">
+          <button class="minus" data-team="counter_three">
+            <i class="bx bx-minus"></i>
+          </button>
+          <button class="plus" data-team="counter_three">
+            <i class="bx bx-plus"></i>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
